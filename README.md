@@ -36,7 +36,7 @@ The generator creates random test cases and saves them to the `testcases/` folde
 ```cpp
 // Modify the generation logic between the comments:
 // modify from here
-int n = N;  // Change this to your problem requirements
+int n = rnd() % 100 + 1;  // Change this to your problem requirements
 vector<int> v(n);
 for (int i = 0; i < n; i++) {
     v[i] = rnd() % 1000;  // Adjust range as needed
@@ -123,7 +123,8 @@ g++ -std=c++17 brute.cpp -o brute
 using ll = long long;
 using ld = long double;
 const ll mod = 1e9 + 7;
-const ll N = 2e5 + 10;  // or 1e5 + 10 in gen.cpp
+const ll N = 1e5 + 10;  // gen.cpp uses 1e5 + 10
+const ll N = 2e5 + 10;  // brute.cpp uses 2e5 + 10
 const ll inf = 1e9;
 const ll linf = 1e18;
 ```
