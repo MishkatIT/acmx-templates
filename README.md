@@ -1,4 +1,4 @@
-"# ACMX Templates
+# ACMX Templates
 
 A collection of C++ templates for competitive programming, designed to streamline test case generation and brute force solution validation.
 
